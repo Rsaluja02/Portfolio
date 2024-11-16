@@ -1,6 +1,6 @@
 import project1 from "../assets/restaraunt.png"
 import project2 from "../assets/weather.png";
-// import project3 from "../assets/projects/project-3.jpg";
+import project3 from "../assets/portfolio.png";
 // import project4 from "../assets/projects/project-4.jpg";
 
 export const HERO_CONTENT = `A passionate Frontend developer with a knack for crafting aesthetic and scalable web applications.`;
@@ -27,13 +27,13 @@ export const PROJECTS = [
         technologies: ["HTML", "CSS", "JS", "React", "GeoDB API","OpenWeather API"],
         link:"https://rsaluja02.github.io/React-Weather-App/"
     },
-    // {
-    // //     title: "Portfolio Website",
-    // //     // image: project3,
-    // //     description:
-    // //         "A personal portfolio website showcasing projects, skills, and contact information.",
-    // //     technologies: ["HTML", "CSS", "React", "Tailwind CSS","Framer Motion"],
-    // // },
+    {
+        title: "Portfolio Website",
+        image: project3,
+        description:
+            "A personal portfolio website showcasing projects, skills, and contact information.",
+        technologies: ["HTML", "CSS", "React", "Tailwind CSS","Framer Motion"],
+    },
     // {
     //     title: "Blogging Platform",
     //     // image: project4,
@@ -43,8 +43,4 @@ export const PROJECTS = [
     // },
 ];
 
-export const CONTACT = {
-    address: "New Delhi, Delhi, India. ",
-    phoneNo: "+12 4555 666 00 ",
-    email: "me@example.com",
-};
+
