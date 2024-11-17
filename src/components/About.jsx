@@ -14,7 +14,7 @@ const About = () => {
 					transition={{ duration: 0.7 }}
 					className="w-full gap-10 lg:w-1/3 lg:p-7 mb-10 ">
 					<div className="flex justify-center items-center ">
-						<img src={aboutPic} alt="profile" className="rounded-2xl"/>
+						<img src={aboutPic} alt="profile" className="rounded-2xl" />
 					</div>
 				</motion.div>
 				<div className="w-full lg:w-1/2">
@@ -26,6 +26,13 @@ const About = () => {
 							className="my-5 items-end max-w-xl px-6 text-2xl">
 							{ABOUT_TEXT}
 						</motion.p>
+					</div>
+					<div className="flex items-end  w-1/2 ">
+						<a
+							href="#projects"
+							className="text-center my-5 mx-4 btn bg-gradient-to-r from-rose-600 to-violet-900 text-l font-bold rounded-full border-none px-5 py-5 hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out">
+							View My Projects!
+						</a>
 					</div>
 				</div>
 			</div>
