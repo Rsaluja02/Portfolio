@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/profilepic.png";
+import profilePic from "../assets/hero-pic.jpg";
 import CV from "../assets/cv.pdf";
 import { motion } from "motion/react";
 
@@ -71,6 +71,7 @@ const Hero = () => {
 							transition={{ duration: 1, delay: 1.3 }}
 							src={profilePic}
 							alt="profile"
+							className="rounded-2xl mb-20"
 						/>
 					</div>
 				</div>
