@@ -14,10 +14,11 @@ const ContactUs = () => {
 			})
 			.then(
 				() => {
-					console.log("SUCCESS!");
+					alert("Message Sent Successfully!");
+					form.current.reset();
 				},
 				(error) => {
-					console.log("FAILED...", error.text);
+					alert("FAILED...", error.text);
 				}
 			);
 	};
