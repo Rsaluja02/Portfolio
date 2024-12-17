@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "motion/react";
+import validator from "validator";
+
 
 const ContactUs = () => {
 	const form = useRef();
@@ -22,6 +24,18 @@ const ContactUs = () => {
 				}
 			);
 	};
+
+	const validateEmail = (e) => {
+		const email = e.target.value;
+
+		if (validator.isEmail(email)) {
+			return "Valid Email";
+		} else {
+			return "Enter valid Email!"
+		}
+	}
+
+
 
 	return (
 		<div className="border-b border-neutral-800 pb-4">
@@ -45,7 +59,8 @@ const ContactUs = () => {
 					required
 					type="text"
 					placeholder="Full Name"
-					name="sender_name"
+					name="user_name" 
+					id="user_name"
 					className="my-5 w-full h-14 px-4 py-2 bg-neutral-900 border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 text-violet-600
                 focus:outline-none focus:border-violet-600 focus:ring-1 focus:ring-violet-600 lg:w-1/3"
 				/>
@@ -54,14 +69,17 @@ const ContactUs = () => {
 					required
 					type="email"
 					placeholder="Email Adress"
-					name="sender_email"
+					name="user_email" 
+					id="user_email"
+					onChange={(e) => validateEmail(e)}
 					className="my-5 w-full h-14 px-4 py-2 bg-neutral-900 border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 text-violet-600
                 focus:outline-none focus:border-violet-600 focus:ring-1 focus:ring-violet-600 lg:w-1/3"
 				/>
 				<label className="text-xl font-medium text-white">Subject</label>
 				<textarea
 					required
-					name="subject"
+					name="subject" 
+					id="subject"
 					type="text"
 					placeholder="Subject"
 					className="my-5 w-full h-14 px-4 py-2 bg-neutral-900 border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 text-violet-600
@@ -70,7 +88,8 @@ const ContactUs = () => {
 				<label className="text-xl font-medium text-white">Message</label>
 				<textarea
 					required
-					name="message"
+					name="message" 
+					id="message"
 					className="my-5 h-40 w-full px-4 py-2 bg-neutral-900 border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 text-violet-600
                 focus:outline-none focus:border-violet-600 focus:ring-1 focus:ring-violet-600 lg:w-1/3"
 				/>
