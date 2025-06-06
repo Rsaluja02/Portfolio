@@ -1,7 +1,7 @@
 import project1 from "../assets/restaraunt.png"
 import project2 from "../assets/weather.png";
 import project3 from "../assets/portfolio.png";
-// import project4 from "../assets/projects/project-4.jpg";
+import project4 from "../assets/samudash.gif";
 
 export const HERO_CONTENT = `A passionate Front-end developer with a knack for crafting aesthetic and scalable web applications.`;
 
@@ -35,13 +35,14 @@ export const PROJECTS = [
         technologies: ["HTML", "CSS", "React", "Tailwind CSS","Framer Motion"],
         link:"#hero"
     },
-    // {
-    //     title: "Blogging Platform",
-    //     // image: project4,
-    //     description:
-    //         "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    //     technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-    // },
+    {
+        title: "SamuDash",
+        image: project4,
+        description:
+            "A 2D Platformer Ninja Dash game with 3 custom maps, made using the beloved 8bit artstyle.",
+        technologies: ["Python", "Pygame",],
+        link : "https://github.com/Rsaluja02/SamuDash"
+    },
 ];
 
 
