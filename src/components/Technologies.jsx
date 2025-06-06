@@ -4,6 +4,7 @@ import { RiNodejsLine } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { AiFillHtml5 } from "react-icons/ai";
 import { motion } from "motion/react";
+import { BiLogoPython } from "react-icons/bi";
 
 const Technologies = () => {
 	return (
@@ -25,7 +26,7 @@ const Technologies = () => {
 					initial={{ y: -10 }}
 					animate={{ y: [10, -10] }}
 					transition={{
-						duration: 4,
+						duration: 3,
 						ease: "linear",
 						repeat: Infinity,
 						repeatType: "reverse",
@@ -37,7 +38,7 @@ const Technologies = () => {
 					initial={{ y: -10 }}
 					animate={{ y: [10, -10] }}
 					transition={{
-						duration: 2,
+						duration: 2.5,
 						ease: "linear",
 						repeat: Infinity,
 						repeatType: "reverse",
@@ -49,7 +50,7 @@ const Technologies = () => {
 					initial={{ y: -10 }}
 					animate={{ y: [10, -10] }}
 					transition={{
-						duration: 3,
+						duration: 3.5,
 						ease: "linear",
 						repeat: Infinity,
 						repeatType: "reverse",
@@ -61,13 +62,25 @@ const Technologies = () => {
 					initial={{ y: -10 }}
 					animate={{ y: [10, -10] }}
 					transition={{
-						duration: 1,
+						duration: 1.5,
 						ease: "linear",
 						repeat: Infinity,
 						repeatType: "reverse",
 					}}
 					className="rounded-2xl border-4 border-neutral-800 p-4">
 					<RiJavascriptFill className="text-7xl text-yellow-400" />
+				</motion.div>
+				<motion.div
+					initial={{ y: -10 }}
+					animate={{ y: [10, -10] }}
+					transition={{
+						duration: 1,
+						ease: "linear",
+						repeat: Infinity,
+						repeatType: "reverse",
+					}}
+					className="rounded-2xl border-4 border-neutral-800 p-4">
+					<BiLogoPython className="text-7xl text-green-400" />
 				</motion.div>
 				<motion.div
 					initial={{ y: -10 }}
